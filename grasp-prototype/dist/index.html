@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Grasp prototype </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Tracker</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+<div>
+  <button onclick="showForm()">Enter Learning</button>
+  <button onclick="showTimeline()">View Timeline</button>
+</div>
+
+<!-- Form Section -->
+<div id="form-section" style="display: none;">
+  <h1>Enter Your Learning Activity</h1>
+  <form id="learning-form">
+    <label for="title">Grasp Title</label>
+    <input type="text" id="title" required><br><br>
+
+    <label for="description">Grasp Description</label>
+    <input type="text" id="description" required><br><br>
+
+    <label for="when">When did you learn it?</label>
+    <input type="date" id="when" required><br><br>
+
+    <label for="how">How did you learn it?</label>
+    <input type="text" id="how" required><br><br>
+
+    <label for="where">Where were you?</label>
+    <input type="text" id="where" required><br><br>
+
+    <label for="withWho">With who did you learn it?</label>
+    <input type="text" id="withWho"><br><br>
+
+    <label for="labels">Other Labels (comma-separated)</label>
+    <input type="text" id="labels" placeholder="e.g., while traveling, DIY project"><br><br>
+
+    <button type="submit">Add Learning</button>
+  </form>
+</div>
+
+<!-- Timeline Section -->
+<div id="timeline-section" style="display: none;">
+  <h1>Learning Timeline</h1>
+  <div class="timeline-wrapper">
+    <div class="timeline-line"></div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</div>
+
+<!-- Popup for labels -->
+<div id="popup" class="popup" style="display: none;">
+  <span id="popup-close" class="popup-close" onclick="closePopup()">×</span>
+  <div id="popup-content"></div>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JS file -->
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
